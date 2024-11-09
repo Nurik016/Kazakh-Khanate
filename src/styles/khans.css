@@ -1,110 +1,113 @@
-/* Base Styles */
-* {
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #f4f1e7;
+    color: #333;
 }
 
 /* Header */
 .header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #e0c097; /* Light beige tone */
-    color: #2a2a2a;
+    background-color: #8a6d3b;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header h1 {
-    font-size: 2.5rem;
+.header .logo {
+    font-size: 24px;
     font-weight: bold;
 }
 
-.header p {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-    color: #4d4d4d;
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
-/* Timeline Section */
-.timeline {
-    padding: 2rem;
-    background-color: #f5f3e7; /* Soft beige background */
+.nav-menu a:hover {
+    text-decoration: underline;
 }
 
-.timeline h2 {
+/* Hero Section */
+.hero {
+    background-color: #d9b38c;
+    padding: 40px 20px;
     text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
 }
 
-.timeline-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.hero h1 {
+    font-size: 36px;
+    color: #fff;
 }
 
-.timeline-item {
-    width: 200px;
-    text-align: center;
-    margin: 1rem;
+.hero .main-khan {
+    margin-top: 20px;
 }
 
-.timeline-item img {
-    width: 100%;
+.hero .main-khan img {
+    max-width: 150px;
     border-radius: 50%;
-    border: 2px solid #8b5d33;
 }
 
-/* Khans Section */
-.khans {
-    padding: 2rem;
+.hero .main-khan p {
+    color: #f4f1e7;
+    margin-top: 10px;
+}
+
+/* Khans Cards Section */
+.khans-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #f5f5f5;
+    justify-content: center;
+    padding: 20px;
 }
 
 .khan-card {
-    width: 250px;
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #ddd;
-    padding: 1rem;
-    margin: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .khan-card img {
     width: 100%;
-    border-radius: 8px;
+    height: auto;
+    border-radius: 10px;
 }
 
-.khan-card h3 {
-    color: #8b5d33;
-    margin: 1rem 0 0.5rem;
-    font-size: 1.4rem;
+.khan-card h2 {
+    font-size: 22px;
+    color: #8a6d3b;
+    margin: 15px 0 10px;
 }
 
 .khan-card p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.khan-card ul {
-    list-style-type: disc;
-    padding-left: 1rem;
-}
-
-.khan-card li {
-    font-size: 0.9rem;
-    color: #4d4d4d;
+    font-size: 14px;
+    color: #555;
 }
 
 /* Footer */
-.footer {
+footer {
+    background-color: #8a6d3b;
+    color: #fff;
+    padding: 15px 20px;
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #f5f5f5;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
 }

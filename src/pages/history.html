@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of the Kazakh Khanate</title>
+    <link rel="stylesheet" href="/src/styles/history.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="logo">Kazakh Khanate</div>
+        <nav class="nav-menu">
+            <a href="/src/index.html">Home</a>
+            <a href="/src/pages/history.html">History</a>
+            <a href="/src/pages/khans.html">Khans</a>
+            <a href="/src/pages/culture.html">Culture</a>
+            <a href="/src/pages/heritage.html">Heritage</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>History of the Kazakh Khanate</h1>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Historical Stages -->
+        <section class="history-section">
+            <div class="history-card" onclick="showHistoryInfo('Founding of the Khanate', 'The Kazakh Khanate was established in the 15th century as a result of the unification of various Kazakh tribes under the leadership of Khans Janibek and Kerei. This marked the beginning of Kazakh statehood.', 'path/to/map-image1.jpg')">
+                <h2>Founding of the Khanate</h2>
+                <p>The Kazakh Khanate was established in the 15th century...</p>
+            </div>
+            <div class="history-card" onclick="showHistoryInfo('Golden Age', 'Under Kasym Khan, the Kazakh Khanate reached its peak. He expanded its territory...', 'path/to/map-image2.jpg')">
+                <h2>Golden Age (16th - early 17th century)</h2>
+                <p>Under Kasym Khan, the Kazakh Khanate reached its peak...</p>
+            </div>
+            <!-- Add other history cards here -->
+        </section>
+
+        <!-- Modal for displaying history details -->
+        <div id="historyModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalText"></p>
+                <div id="modalMap" class="map-placeholder"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kazakh Khanate. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="/src/scripts/history.js"></script>
+</body>
+</html>

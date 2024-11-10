@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/src/styles/history.css">
 </head>
 <body>
-    <!-- Шапка сайта -->
+    <!-- Header -->
     <header class="header">
         <div class="logo">Kazakh Khanate</div>
         <nav class="nav-menu">
@@ -26,21 +26,13 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Historical Stages -->
         <section class="history-section">
-            <div class="history-card" onclick="showHistoryInfo('Founding of the Khanate', 'The Kazakh Khanate was established in the 15th century as a result of the unification of various Kazakh tribes under the leadership of Khans Janibek and Kerei. This marked the beginning of Kazakh statehood.', 'path/to/map-image1.jpg')">
-                <h2>Founding of the Khanate</h2>
-                <p>The Kazakh Khanate was established in the 15th century...</p>
-            </div>
-            <div class="history-card" onclick="showHistoryInfo('Golden Age', 'Under Kasym Khan, the Kazakh Khanate reached its peak. He expanded its territory...', 'path/to/map-image2.jpg')">
-                <h2>Golden Age (16th - early 17th century)</h2>
-                <p>Under Kasym Khan, the Kazakh Khanate reached its peak...</p>
-            </div>
-            <!-- Add other history cards here -->
+            <!-- Cards for Historical Stages -->
         </section>
 
         <!-- Modal for displaying history details -->
-        <div id="historyModal" class="modal">
+        <div id="modalOverlay" class="modal-overlay" style="display:none;"></div>
+        <div id="historyModal" class="modal" style="display:none;">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <h2 id="modalTitle"></h2>
@@ -54,12 +46,16 @@
     <footer>
         <p>&copy; 2024 Kazakh Khanate. All rights reserved.</p>
         <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+            <a href="/src/index.html">Home</a>
+            <a href="/src/pages/history.html">History</a>
+            <a href="/src/pages/khans.html">Khans</a>
+            <a href="/src/pages/culture.html">Culture</a>
+            <a href="/src/pages/heritage.html">Heritage</a>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="/src/scripts/historyData.js"></script>
     <script src="/src/scripts/history.js"></script>
 </body>
 </html>

@@ -78,37 +78,58 @@
 }
 
 /* Основные разделы */
+/* Основной контейнер для карточек */
 .main-sections {
     display: flex;
     justify-content: space-around;
     padding: 40px 20px;
-    background-color: rgb(86,92,99);
+    background-color: #566063;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
+/* Карточка */
 .section {
+    position: relative;
     text-align: center;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 22%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.section h2 {
-    font-size: 1.6em;
-    color: #00274d;
-    margin-bottom: 10px;
-}
-
-.section p {
-    font-size: 0.95em;
+/* Изображение в карточке */
+.section-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     margin-bottom: 15px;
 }
 
+/* Заголовок карточки */
+.section h2 {
+    font-size: 1.6em;
+    color: #ffd700;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Описание карточки */
+.section p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    line-height: 1.4;
+}
+
+/* Кнопка "Discover" */
 .section-button {
     display: inline-block;
-    padding: 10px 15px;
-    background-color: #ffd700;
+    padding: 10px 20px;
+    background-color: #ffca28;
     color: #00274d;
     text-decoration: none;
     font-weight: bold;

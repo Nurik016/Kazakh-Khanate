@@ -11,6 +11,10 @@
     font-family: 'MyCustomFont', sans-serif;
 }
 
+body{
+    background: url('/public/images/bc_mainpage.jpg') center/cover no-repeat;s
+}
+
 /* Шапка */
 .header {
     display: flex;
@@ -44,7 +48,6 @@
 /* Главный блок */
 .hero {
     padding-top: 80px;
-    background: url('/public/images/bc_main.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
     height: 100vh;
@@ -83,7 +86,6 @@
     display: flex;
     justify-content: space-around;
     padding: 40px 20px;
-    background-color: #566063;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -161,5 +163,5 @@
 
 .hero-description{
     margin-top: 260px;
-    margin-left: 260px;
+    margin-left: 255px;
 }

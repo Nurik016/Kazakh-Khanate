@@ -11,10 +11,6 @@
     font-family: 'MyCustomFont', sans-serif;
 }
 
-body{
-    background: url('/public/images/bc_mainpage.jpg') center/cover no-repeat;s
-}
-
 /* Шапка */
 .header {
     display: flex;
@@ -53,6 +49,7 @@ body{
     height: 100vh;
     position: relative;
     z-index: 1;
+    background: url('/public/images/bc_main.jpg') center/cover no-repeat;
 }
 
 .hero h1 {
@@ -80,30 +77,38 @@ body{
     background-color: #ffcc00;
 }
 
-/* Основные разделы */
+/* Секция карточек с серым фоном */
+.cards-section {
+    background-color: rgb(89, 96, 103);
+    padding: 60px 0; /* Отступ сверху и снизу */
+}
+
 /* Основной контейнер для карточек */
 .main-sections {
     display: flex;
     justify-content: space-around;
-    padding: 40px 20px;
+    padding: 0 20px; /* Отступы по бокам */
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; /* Центрирование карточек */
 }
 
 /* Карточка */
-.section {
+.cards {
     position: relative;
     text-align: center;
     padding: 20px;
-    border-radius: 15px;
     width: 22%;
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgb(89, 96, 103);
+    border-radius: 10px;
 }
 
 /* Изображение в карточке */
-.section-image {
-    height: 150px;
+.cards-image {
+    height: 275px;
     background-size: cover;
     background-position: center;
     border-top-left-radius: 15px;
@@ -112,7 +117,7 @@ body{
 }
 
 /* Заголовок карточки */
-.section h2 {
+.cards h2 {
     font-size: 1.6em;
     color: #ffd700;
     margin: 15px 0;
@@ -120,7 +125,7 @@ body{
 }
 
 /* Описание карточки */
-.section p {
+.cards p {
     font-size: 1em;
     margin-bottom: 15px;
     color: #e0e0e0;
@@ -128,7 +133,7 @@ body{
 }
 
 /* Кнопка "Discover" */
-.section-button {
+.cards-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ffca28;
@@ -139,7 +144,7 @@ body{
     transition: background-color 0.3s;
 }
 
-.section-button:hover {
+.cards-button:hover {
     background-color: #ffcc00;
 }
 
@@ -164,4 +169,18 @@ body{
 .hero-description{
     margin-top: 260px;
     margin-left: 255px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer .social-links a {
+    color: #ffd700;
+    margin: 0 10px;
+    text-decoration: none;
 }

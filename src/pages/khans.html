@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="/src/styles/khans.css">
 </head>
 <body>
+
+        <!-- Modal structure -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <h2 id="modalTitle"></h2>
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="logo">Kazakh Khanate</div>
@@ -15,7 +27,7 @@
             <a href="/src/pages/history.html">History</a>
             <a href="/src/pages/khans.html">Khans</a>
             <a href="/src/pages/culture.html">Culture</a>
-            <a href="/src/pages/heritage.html">Heritage</a>
+            <a href="/src/pages/quiz.html">Quiz</a>
         </nav>
     </header>
 
@@ -30,32 +42,145 @@
 
     <!-- Khans Cards Section -->
     <main class="khans-section">
+        <!-- Kerey Khan -->
         <div class="khan-card">
-            <img src="/images/khan1.jpg" alt="Khan Image">
-            <h2>Khan Name</h2>
-            <p>Short biography about this Khan's impact on the Kazakh Khanate.</p>
+            <img src="/images/khan1.jpg" alt="Kerey Khan">
+            <h2>Kerey Khan (1424–1474)</h2>
+            <p>Founder of the Kazakh Khanate, Kerey Khan united the Kazakh tribes and established the foundations of the Khanate.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Kerey Khan, son of Pulad Sultan and a descendant of Uruz Khan, was one of the founders of the Kazakh Khanate. In the 1450s, he and his brother Zhanibek, dissatisfied with the rule of Abulkhair Khan in the White Horde, separated from him and moved to Moghulistan, where they received support from the Khan of Moghulistan, Esenbuga, who provided them with land.</p>
+                <p>After the death of Abulkhair Khan in 1468, Kerey Khan and Zhanibek Khan continued their struggle for power in Eastern Dzhungaria, aiming to establish an independent state. Kerey Khan passed away in 1473 or 1474. His legacy remains significant in the history of Kazakhstan, and in 2010 a monument was erected in Astana to commemorate Kerey and Zhanibek, the founders of the Kazakh Khanate.</p>
+            </div>
         </div>
+
+        <!-- Zhanibek Khan -->
         <div class="khan-card">
-            <img src="/images/khan2.jpg" alt="Khan Image">
-            <h2>Khan Name</h2>
-            <p>Short biography about this Khan's impact on the Kazakh Khanate.</p>
+            <img src="/images/khan2.jpg" alt="Zhanibek Khan">
+            <h2>Zhanibek Khan (1474—1480)</h2>
+            <p>Co-founder of the Kazakh Khanate, Zhanibek Khan worked with his brother Kerey to solidify the state.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Zhanibek Khan, son of Baraq Khan, worked alongside Kerey to establish the foundations of the Kazakh Khanate, contributing greatly to the early development of the state.</p>
+            </div>
         </div>
+
+        <!-- Buruinduk Khan -->
         <div class="khan-card">
-            <img src="/images/khan3.jpg" alt="Khan Image">
-            <h2>Khan Name</h2>
-            <p>Short biography about this Khan's impact on the Kazakh Khanate.</p>
+            <img src="/images/khan3.jpg" alt="Buruinduk Khan">
+            <h2>Buruinduk Khan (1480–1511)</h2>
+            <p>Buruinduk Khan was the son of Kerey Khan and ruled as a Khan for over 30 years.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Buruinduk Khan, son of Kerey Khan, continued to strengthen the Kazakh Khanate after the founding period, maintaining the stability and unity of the tribes during his reign.</p>
+            </div>
         </div>
-        <!-- Add more Khan cards as needed -->
+
+        <!-- Kasym Khan -->
+        <div class="khan-card">
+            <img src="/images/khan4.jpg" alt="Kasym Khan">
+            <h2>Kasym Khan (1511–1522)</h2>
+            <p>Kasym Khan expanded the territory of the Kazakh Khanate, making it one of the strongest states in Central Asia.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Kasym Khan, son of Zhanibek Khan, was one of the most influential rulers, expanding Kazakh territory significantly and establishing important reforms that shaped the future of the Khanate.</p>
+            </div>
+        </div>
+
+        <!-- Mamash Khan -->
+        <div class="khan-card">
+            <img src="/images/khan5.jpg" alt="Mamash Khan">
+            <h2>Mamash Khan (1522–1523)</h2>
+            <p>Short reign, following Kasym Khan's death, Mamash Khan succeeded briefly.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Mamash Khan, son of Kasym Khan, ruled for a short period and struggled to maintain the stability of the Khanate following the powerful rule of his father.</p>
+            </div>
+        </div>
+
+        <!-- Takhir Khan -->
+        <div class="khan-card">
+            <img src="/images/khan6.jpg" alt="Takhir Khan">
+            <h2>Takhir Khan (1523–1533)</h2>
+            <p>Takhir Khan, son of Adik Sultan, ruled the Kazakh Khanate with efforts to stabilize the state amidst internal and external conflicts.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Takhir Khan, son of Adik Sultan, worked towards consolidating the Khanate but faced significant internal and external challenges during his reign.</p>
+            </div>
+        </div>
+
+        <!-- Buidash Khan -->
+        <div class="khan-card">
+            <img src="/images/khan7.jpg" alt="Buidash Khan">
+            <h2>Buidash Khan (1533–1538)</h2>
+            <p>Buidash Khan, son of Adik Sultan, ruled in the region of Zhetysu and played a role in maintaining the unity of the Khanate.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Buidash Khan ruled the Zhetysu region and worked to maintain peace in the region amidst increasing pressures from external forces.</p>
+            </div>
+        </div>
+
+        <!-- Hak-Nazar Khan -->
+        <div class="khan-card">
+            <img src="/images/khan8.jpg" alt="Hak-Nazar Khan">
+            <h2>Hak-Nazar Khan (1538–1580)</h2>
+            <p>Hak-Nazar Khan, son of Kasym Khan, expanded the territory of the Khanate and secured its political structure.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Hak-Nazar Khan, son of Kasym Khan, played a significant role in expanding the Kazakh Khanate's territory and securing alliances that were crucial for its survival and prosperity.</p>
+            </div>
+        </div>
+
+        <!-- Shigai Khan -->
+        <div class="khan-card">
+            <img src="/images/khan9.jpg" alt="Shigai Khan">
+            <h2>Shigai Khan (1580–1582)</h2>
+            <p>Shigai Khan, son of Zhadik Sultan, ruled briefly and faced challenges in maintaining control of the Khanate.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Shigai Khan, son of Zhadik Sultan, was a short-reigning ruler who struggled to maintain authority during a turbulent period in Kazakh history.</p>
+            </div>
+        </div>
+
+        <!-- Tauke Khan -->
+        <div class="khan-card">
+            <img src="/images/khan10.jpg" alt="Tauke Khan">
+            <h2>Tauke Khan (1680–1715)</h2>
+            <p>Tauke Khan implemented legal reforms and strengthened the internal structure of the Khanate.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Tauke Khan, son of Salkam Jangir Khan, is known for creating the "Zheti Zhargy" legal code, which helped in the governance of the Khanate during his reign.</p>
+            </div>
+        </div>
+
+        <!-- Abulai Khan -->
+        <div class="khan-card">
+            <img src="/images/khan11.jpg" alt="Abulai Khan">
+            <h2>Abulai Khan (1711–1781)</h2>
+            <p>Abulai Khan, one of the most influential leaders, united the Kazakh people and led them during difficult times.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Abulai Khan, son of Korkem Uali Sultan, unified the Kazakh people and successfully resisted foreign invasions during the 18th century. He remains one of the most revered figures in Kazakh history.</p>
+            </div>
+        </div>
+
+        <!-- Kenesary Khan -->
+        <div class="khan-card">
+            <img src="/images/khan12.jpg" alt="Kenesary Khan">
+            <h2>Kenesary Khan (1802–1847)</h2>
+            <p>Kenesary Khan, son of Kasym Sultan, led a revolt against Russian colonial expansion, aiming to preserve the independence of the Kazakh Khanate.</p>
+            <button class="toggle-info">More Info</button>
+            <div class="khan-info">
+                <p>Kenesary Khan led the resistance against Russian imperialism in the 19th century, striving to maintain Kazakh sovereignty and freedom against foreign domination.</p>
+            </div>
+        </div>
+
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Kazakh Khanate. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2024 Kazakh Khanate. All Rights Reserved.</p>
     </footer>
+
+    <script src="/src/scripts/khans.js"></script>
 </body>
 </html>

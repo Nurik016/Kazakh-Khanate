@@ -8,16 +8,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Georgia', serif;
 }
 
 /* Body */
 body {
-    background-image: url('/public/images/history_bc.webp'); /* Use your image path */
+    background-image: url('/public/images/history/history_bc.webp'); /* Use your image path */
     background-size: cover;
     background-position: center;
     color: #333;
     line-height: 1.6;
+    font-family: 'Georgia', serif;
 }
 
 /* Header */
@@ -33,6 +33,7 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
+    font-family: 'MyCustomFont', serif;
 }
 
 .header .logo {
@@ -189,6 +190,8 @@ footer {
     background-color: #333;
     color: #fff;
     margin-top: 40px;
+    font-family: 'MyCustomFont', serif;
+    font-size: 20px;
 }
 
 footer .social-links a {

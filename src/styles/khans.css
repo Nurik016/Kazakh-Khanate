@@ -1,61 +1,50 @@
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
+/* Подключение шрифта */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/src/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+}
+
+/* Общие стили */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f1e7;
-    color: #333;
+    box-sizing: border-box;
+}
+
+/* Общий стиль для страницы */
+body {
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Header */
 .header {
-    background-color: #8a6d3b;
-    color: #fff;
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-family: 'MyCustomFont', serif;
 }
 
 .header .logo {
-    font-size: 24px;
+    font-size: 1.5em;
+    color: #ffd700;
     font-weight: bold;
 }
 
 .nav-menu a {
-    color: #fff;
+    font-size: 1.25em;
+    margin: 0 15px;
+    color: #ffd700;
     text-decoration: none;
-    margin-left: 20px;
-}
-
-.nav-menu a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-    background-color: #d9b38c;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 36px;
-    color: #fff;
-}
-
-.hero .main-khan {
-    margin-top: 20px;
-}
-
-.hero .main-khan img {
-    max-width: 150px;
-    border-radius: 50%;
-}
-
-.hero .main-khan p {
-    color: #f4f1e7;
-    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* Khans Cards Section */
@@ -64,6 +53,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    margin-top: 100px; /* Отступ для хедера */
 }
 
 .khan-card {
@@ -75,6 +65,11 @@ body {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Легкая анимация при наведении */
+}
+
+.khan-card:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
 }
 
 .khan-card img {
@@ -109,6 +104,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 .toggle-info:hover {
@@ -121,7 +117,8 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
-    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'MyCustomFont', sans-serif;
 }
 
 footer .social-links a {
@@ -140,7 +137,6 @@ footer .social-links a {
     width: 100%;  /* Full width */
     height: 100%;  /* Full height */
     overflow: auto;  /* Enable scrolling if needed */
-    background-color: rgb(0, 0, 0);  /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);  /* Black w/ opacity */
 }
 
@@ -166,4 +162,3 @@ footer .social-links a {
     text-decoration: none;
     cursor: pointer;
 }
-

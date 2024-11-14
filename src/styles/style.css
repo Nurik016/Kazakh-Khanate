@@ -122,7 +122,7 @@
     padding: 20px;
     width: 22%;
     color: white;
-    background-color: rgb(89, 96, 103);
+    background-color: rgb(102, 114, 126);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */

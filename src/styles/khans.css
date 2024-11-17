@@ -1,7 +1,7 @@
 /* Подключение шрифта */
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('/src/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+    src: url('Kazakh-Khanate/src/fonts/CormorantGaramond-Regular.ttf') format('truetype');
 }
 
 /* Общие стили */

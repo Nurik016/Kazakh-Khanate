@@ -26,6 +26,13 @@
     z-index: 2;
 }
 
+.btn-side-bars{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 32px;
+}
+
 .header .logo {
     font-size: 1.5em;
     color: #ffd700;
@@ -46,9 +53,9 @@
     color: white;
     text-align: center;
     height: 100vh;
-    position: relative;
+
     z-index: 1;
-    background: url('/Kazakh-Khanate/public/images/main/bc_main.jpg') center/cover no-repeat;
+    background: url('/Kazakh-Khanate/public/images/main/yurt.webp') center/cover no-repeat;
     background-size: cover;
 }
 
@@ -269,4 +276,110 @@ footer .social-links a {
     color: #ffd700;
     margin: 0 10px;
     text-decoration: none;
+}
+
+.study-conspect-outer {
+    padding: 20px;
+    background: #3b3b3b;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content-text h1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-text h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 5px;
+}
+
+.content-text h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.content-text p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.content-text ul {
+    margin: 10px 0 10px 20px;
+    padding: 0;
+    list-style: disc;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: #4F6795;
+    color: #dadada;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.info-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.info-container .dimensions {
+    font-weight: bold;
+}
+
+.reflection-container {
+    max-width: 100%;
+    width: 100%;
+    background-color: #2C5095;
+    color: #dadada;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    padding: 20px;
+
+}
+
+.reflection-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.reflection-container p {
+    font-size: 18px;
+    line-height: 1.6;
 }

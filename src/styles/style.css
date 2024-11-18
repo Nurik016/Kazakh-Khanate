@@ -188,6 +188,12 @@
 
     .nav-menu {
         margin-top: 15px;
+
+        align-content: space-around;
+    }
+
+    .hero-content{
+        align-items: center;
     }
 
     .hero h1 {
@@ -199,23 +205,16 @@
     }
 }
 
+
 @media (max-width: 480px) {
     .cards {
-        width: 100%; /* Full-width cards for smaller screens */
+        width: calc(100% - 40px); /* Accounts for padding/margins */
+        margin: 20px auto;
     }
+
 
     .hero h1 {
         font-size: 1.8em; /* Smaller title for mobile */
-    }
-
-    .hero-description {
-        font-size: 0.9em; /* Smaller description */
-        margin-left: 0;
-    }
-
-    .hero-title {
-        margin-left: 0;
-        font-size: 2.2em;
     }
 
     .header .logo {
@@ -224,14 +223,17 @@
 
     .nav-menu {
         font-size: 1em;
-        text-align: center; /* Center menu links */
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
     }
 
     .nav-menu a {
-        display: block; /* Stack links vertically */
         margin: 10px 0;
     }
 }
+
+
 
 /* Логотип в главном блоке */
 .hero-content {
@@ -242,7 +244,7 @@
 .hero-title {
     font-size: 3em;
     text-align: left;
-    margin-left: 295px;
+    margin-right: 295px;
     margin-top: 50px;
 }
 
@@ -252,8 +254,11 @@
 }
 
 .hero-description {
+    display: flex;
     margin-top: 260px;
-    margin-left: 255px;
+    margin-left: 50px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Footer */

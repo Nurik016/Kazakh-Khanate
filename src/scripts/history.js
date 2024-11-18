@@ -3,7 +3,7 @@
 // Функция для загрузки данных из текстового файла
 async function loadDescription(fileName) {
     try {
-        const response = await fetch(`/src/texts/${fileName}.txt`);
+        const response = await fetch(`/Kazakh-Khanate/src/texts/${fileName}.txt`);
         if (!response.ok) {
             throw new Error('Не удалось загрузить файл');
         }

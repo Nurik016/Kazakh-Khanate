@@ -55,7 +55,7 @@
     height: 100vh;
 
     z-index: 1;
-    background: url('/Kazakh-Khanate/public/images/main/yurt.webp') center/cover no-repeat;
+    background: url('/Kazakh-Khanate/public/images/main/steep.png') center/cover no-repeat;
     background-size: cover;
 }
 
@@ -326,10 +326,10 @@ ul li {
     display: flex;
     max-width: 100%;
     width: 100%;
-    background-color: #4F6795;
-    color: #dadada;
+    background-color: #D9C5A5;
+    color: #111111;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
+    padding: 100px;
     overflow: hidden;
 }
 
@@ -366,8 +366,8 @@ ul li {
 .reflection-container {
     max-width: 100%;
     width: 100%;
-    background-color: #2C5095;
-    color: #dadada;
+    background-color: #C4A16B;
+    color: #111111;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     padding: 20px;

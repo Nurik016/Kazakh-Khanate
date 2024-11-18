@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.3);
+    background-color: rgb(42, 42, 42);
     color: #fff;
     position: absolute;
     width: 100%;
@@ -27,6 +27,8 @@
 }
 
 .btn-side-bars{
+    flex: 1 1 150px;
+    min-width: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -195,6 +197,8 @@
 
     .nav-menu {
         margin-top: 15px;
+
+        align-content: space-around;
     }
 
     .hero h1 {
@@ -203,6 +207,31 @@
 
     .hero p {
         font-size: 1em; /* Make description smaller */
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: ;
+        width: 100%;
+        background-color: #D9C5A5;
+        color: #111111;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 100px;
+        overflow: hidden;
+    }
+
+    .image-container {
+        flex: 1;
+    }
+    
+    .image-container img {
+        min-width: 60vw;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -231,11 +260,12 @@
 
     .nav-menu {
         font-size: 1em;
-        text-align: center; /* Center menu links */
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
     }
 
     .nav-menu a {
-        display: block; /* Stack links vertically */
         margin: 10px 0;
     }
 }
@@ -324,7 +354,9 @@ ul li {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
+    align-items: ;
     width: 100%;
     background-color: #D9C5A5;
     color: #111111;

@@ -22,14 +22,30 @@ body {
     height: 100vh;
 }
 
+@media (max-width: 768px) {
+    .cards {
+        width: 45%; /* Adjust for medium screens */
+    }
+}
 
+@media (max-width: 480px) {
+    .cards {
+        width: calc(100% - 40px); /* Accounts for padding/margins */
+        margin: 20px auto;
+    }
+
+    .cards-section {
+        background: #D2B48C;
+        margin-top: 200px;
+    }
+}
 /* Шапка */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.3);
+    background-color: rgb(42, 42, 42);
     color: #fff;
     position: absolute;
     width: 100%;
@@ -54,17 +70,20 @@ body {
 
 .cards-section {
     background: #D2B48C;
-    padding: 60px 0; /* Отступ сверху и снизу */
+    padding: 100px 0; /* Отступ сверху и снизу */
 }
+
 
 /* Основной контейнер для карточек */
 .main-sections {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 5px;
     gap: 20px;
     flex-wrap: wrap;
     max-width: 100%;
+    height: auto;
     margin: 0 auto; /* Центрирование карточек */
 }
 
@@ -72,6 +91,7 @@ body {
 .cards {
     position: relative;
     text-align: center;
+    min-width: 40%;
     padding: 20px;
     width: 22%;
     color: white;
@@ -81,9 +101,21 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
+.cards button {
+    background-color: #333; /* Dark gray */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
 .cards-c {
     position: relative;
     text-align: center;
+    min-width: 30%;
     width: 22%;
     color: white;
     background-color: rgb(102, 114, 126);
